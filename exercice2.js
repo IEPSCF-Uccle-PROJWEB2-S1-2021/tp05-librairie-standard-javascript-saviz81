@@ -1,6 +1,6 @@
 function analyzeTemperature(quantity, data)
 {
-  if(quantity=0)
+  if(quantity==0)
   {
       return 0;
   }
