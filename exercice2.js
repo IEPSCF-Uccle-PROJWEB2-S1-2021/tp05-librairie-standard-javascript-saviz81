@@ -8,15 +8,18 @@ function analyzeTemperature(quantity, data)
  {
 
   let temp=data.split(" ");
+  let temp2=[];
+  let j=0;
    for(let i=0; i<temp.length;i++)
   {
-    if(temp[i]>-273 && temp[i]<5526)
+    if(temp[i]>=-273 && temp[i]<=5526)
     {
-     temp[i]=(Math.abs(temp[i]));
+     temp2[j]=(Math.abs(temp[i]));
+     j++;
    }
   }
-   temp.sort();
-   return temp[0];
+   temp2.sort();
+   return temp2[0];
 
   }
 }
