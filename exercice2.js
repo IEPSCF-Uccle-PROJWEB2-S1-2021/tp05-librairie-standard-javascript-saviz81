@@ -1,11 +1,12 @@
 function analyzeTemperature(quantity, data)
 {
- if(quantity>=0 && quantity<=10000)
- {
   if(quantity=0)
   {
       return 0;
   }
+ if(quantity>0 && quantity<=10000)
+ {
+
   let temp=data.split(" ");
    for(let i=0; i<temp.length;i++)
   {
