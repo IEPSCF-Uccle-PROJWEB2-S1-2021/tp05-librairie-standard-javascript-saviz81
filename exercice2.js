@@ -1,6 +1,7 @@
 function analyzeTemperature(quantity, data)
 {
-if(quantity>=0 && quantity<=10000){
+ if(quantity>=0 && quantity<=10000)
+ {
   if(quantity=0)
   {
       return 0;
